@@ -4,15 +4,16 @@
     -   Numero di km percorsi
     -   Età del passeggero con il select (Maggiorenne o Minorenne)
 
+    Impostare evento al click dell'utente
+    -   Genera
+    -   Annulla
+
     Calcolo del prezzo
 
     Calcolo dello sconto in base
     -   se under 18 avrà uno sconto del 17%
     -   se over 65 avrà uno sconto del 33%
 
-    Impostare evento al click dell'utente
-    -   Genera
-    -   Annulla
 
     Presentare il prezzo ultimato
 
@@ -34,7 +35,7 @@ const ageUser = document.getElementById('my-age-user');
 // console.log(ageUser.value);
 
 
-// button per l'evento
+// button calcolo per l'evento
 
 const button = document.querySelector('#my-submit');
 
@@ -43,7 +44,7 @@ button.addEventListener('click', function() {
     const kmPrice = 0.27;
     let price = kmPrice * parseFloat(kmUser.value);
 
-    console.log(price);
+    console.log(`Il prezzo intero è di ${price} €.`);
 
     // calcolo dello sconto per età
     if (ageUser.value == 'under18') {
@@ -51,22 +52,29 @@ button.addEventListener('click', function() {
         console.log('è minorenne');
 
         const disUnder18 = (17 / 100);
-
-        price *= disUnder18;
+        price -= price * disUnder18;
 
     } else if (ageUser.value == 'over65') {
 
         console.log('ha 65 anni in su');
 
-        const divOver65 = (33 / 100);
-
-        price *= disOver65;
+        const disOver65 = (33 / 100);
+        price -= price * disOver65;
 
     } else {
         console.log('tra i 19 e 64 anni');
     }
 
     // Prezzo assoluto
-    console.log(price);
+    console.log(parseFloat( price.toFixed(2) ));
 });
 
+
+// button reset 
+
+const reset = document.querySelector('#my-reset');
+
+reset.addEventListener('click', function(){
+    user.value = "";
+    kmUser.value = "";
+});
