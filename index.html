@@ -22,6 +22,57 @@
 </head>
 <body>
     
+    <main>
+        <div class="container">
+
+            <!-- input utente -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="text-uppercase">Calcola il prezzo del tuo biglietto</h1>
+                </div>
+                <div class="col-12">
+
+                    <!-- inserimento dati -->
+                    <form>
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <label for="my-user">
+                                    Nome Cognome
+                                </label>
+                                <input type="text" name="User" id="my-user">
+                            </div>
+                            <div class="col-4">
+                                <label for="my-km-user">
+                                    Km da percorre
+                                </label>
+                                <input type="text" name="User" id="my-km-user">
+                            </div>
+                            <div class="col-4">
+                                <label for="my-age-user">
+                                    Fascia d'età
+                                </label>
+                                <select class="form-control" id="my-age-user">
+                                    <option>Maggiorenne</option>
+                                    <option>Minorenne</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- buttons -->
+                    <div class="mt-5">
+                        <button type="submit" id="my-submit" class="btn btn-primary">GENERA</button>
+                        <button type="submit" id="my-reset" class="btn btn-primary">ANNULLA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- output -->
+            <div class="row">
+
+            </div>
+        </div>
+    </main>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>

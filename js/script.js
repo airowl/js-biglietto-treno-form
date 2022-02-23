@@ -10,6 +10,7 @@
     -   se under 18 avrà uno sconto del 17%
     -   se over 65 avrà uno sconto del 33%
 
+    
     Presentare il prezzo ultimato
 
     Calcolo randomico della carozza
@@ -18,5 +19,5 @@
 
     Presentare il tutto sull'interfaccia utente
 
-
 */ 
+
