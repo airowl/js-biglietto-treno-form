@@ -90,4 +90,5 @@ const reset = document.querySelector('#my-reset');
 reset.addEventListener('click', function(){
     user.value = "";
     kmUser.value = "";
+    console.log('RESET DEI INPUT');
 });
