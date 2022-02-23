@@ -68,6 +68,11 @@ button.addEventListener('click', function() {
     // Prezzo assoluto
     const output = parseFloat( price.toFixed(2) );
 
+    // random del numero della carrozza
+    const numberCar = Math.floor(Math.random() * 10) + 1;
+    document.getElementById('my-carrozza').innerHTML = numberCar;
+
+    // presentare i dati all'utente
     document.getElementById('my-price').innerHTML = output + "€";
 
     document.getElementById('my-name-user').innerHTML = user.value;
