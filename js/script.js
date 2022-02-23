@@ -66,7 +66,12 @@ button.addEventListener('click', function() {
     }
 
     // Prezzo assoluto
-    console.log(parseFloat( price.toFixed(2) ));
+    const output = parseFloat( price.toFixed(2) );
+
+    document.getElementById('my-price').innerHTML = output + "€";
+
+    document.getElementById('my-name-user').innerHTML = user.value;
+
 });
 
 
