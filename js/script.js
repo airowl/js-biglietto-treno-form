@@ -29,11 +29,9 @@ const user = document.getElementById('my-user');
 const kmUser = document.getElementById('my-km-user');
 const ageUser = document.getElementById('my-age-user');
 
-
 // console.log(user.value);
 // console.log(parseFloat(kmUser.value));
 // console.log(ageUser.value);
-
 
 // button calcolo per l'evento
 
@@ -81,7 +79,6 @@ button.addEventListener('click', function() {
     document.getElementById('my-name-user').innerHTML = user.value;
 
 });
-
 
 // button reset 
 
